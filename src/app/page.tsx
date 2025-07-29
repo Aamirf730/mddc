@@ -48,7 +48,10 @@ export default function Home() {
 
         const apiKey = process.env.NEXT_PUBLIC_HERE_API_KEY;
         if (!apiKey) {
-          throw new Error('HERE Maps API key is missing');
+          // Instead of throwing an error, show a user-friendly message
+          setMapError('Map functionality requires a HERE Maps API key. Please contact the administrator to configure the API key.');
+          setIsMapLoading(false);
+          return;
         }
 
         const platform = new window.H.service.Platform({
@@ -133,7 +136,9 @@ export default function Home() {
     try {
       const apiKey = process.env.NEXT_PUBLIC_HERE_API_KEY;
       if (!apiKey) {
-        throw new Error('HERE Maps API key is missing');
+        setMapError('Map functionality requires a HERE Maps API key. Please contact the administrator to configure the API key.');
+        setIsLoading(false);
+        return;
       }
 
       // First, geocode both locations
