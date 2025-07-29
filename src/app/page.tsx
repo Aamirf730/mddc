@@ -46,13 +46,10 @@ export default function Home() {
           throw new Error('HERE Maps SDK not loaded properly');
         }
 
-        const apiKey = process.env.NEXT_PUBLIC_HERE_API_KEY;
-        if (!apiKey) {
-          // Instead of throwing an error, show a user-friendly message
-          setMapError('Map functionality requires a HERE Maps API key. Please contact the administrator to configure the API key.');
-          setIsMapLoading(false);
-          return;
-        }
+              const apiKey = process.env.NEXT_PUBLIC_HERE_API_KEY;
+      if (!apiKey) {
+        throw new Error('HERE Maps API key is missing');
+      }
 
         const platform = new window.H.service.Platform({
           apikey: apiKey
@@ -136,9 +133,7 @@ export default function Home() {
     try {
       const apiKey = process.env.NEXT_PUBLIC_HERE_API_KEY;
       if (!apiKey) {
-        setMapError('Map functionality requires a HERE Maps API key. Please contact the administrator to configure the API key.');
-        setIsLoading(false);
-        return;
+        throw new Error('HERE Maps API key is missing');
       }
 
       // First, geocode both locations
