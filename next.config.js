@@ -11,6 +11,13 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  // Ensure proper static export for Cloudflare Pages
+  assetPrefix: '',
+  basePath: '',
+  // Disable server-side features
+  experimental: {
+    // Disable features that don't work with static export
   }
 }
 
