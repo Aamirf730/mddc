@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat"
+});
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Maps Driving Directions",
-    default: "Maps Driving Directions - Get Turn-by-Turn Navigation & Route Planning",
+    template: "%s | Mapquest Directions - Maps and Driving Routes Online",
+    default: "Mapquest Directions - Maps and Driving Routes Online",
   },
   description: "Get accurate driving, walking, and cycling directions with Yahoo Maps. Find the best routes, turn-by-turn navigation, real-time traffic updates, and interactive maps for any destination.",
   metadataBase: new URL("https://mapsdirectionsdriving.com"),
@@ -18,13 +23,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mapsdirectionsdriving.com",
-    siteName: "Maps Driving Directions",
+    siteName: "Mapquest Directions - Maps and Driving Routes Online",
     images: [
       {
         url: "/yahoo-maps-driving-directions.webp",
         width: 1200,
         height: 630,
-        alt: "Maps Driving Directions",
+        alt: "Mapquest Directions - Maps and Driving Routes Online",
       },
     ],
   },
@@ -55,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msvalidate.01" content="9D8842ACF6F1B85171E74442F7DB195E" />
@@ -90,7 +95,7 @@ export default function RootLayout({
         </Script>
         <meta name="google-site-verification" content="google-site-verification=1234567890" />
       </head>
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <div className="min-h-screen bg-gray-100">
           <Header />
           <main className="max-w-full mx-auto px-4 py-8 sm:px-6 lg:px-8" role="main">

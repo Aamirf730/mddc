@@ -216,7 +216,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "url": "https://mapsdirectionsdriving.com",
-            "name": "Maps Driving",
+            "name": "Mapquest Directions - Maps and Driving Routes Online",
             "description": "Get accurate driving directions, calculate distances, and plan your trips with our comprehensive mapping tools.",
             "potentialAction": {
               "@type": "SearchAction",
@@ -240,7 +240,7 @@ export default function Home() {
             "hasPart": [
               {
                 "@type": "WebPage",
-                "url": "https://mapsdirectionsdriving.com/mapquest-mileage",
+                "url": "https://mapsdirectionsdriving.com/mapquest-mileage-calculator",
                 "name": "MapQuest Mileage Calculator",
                 "description": "Calculate trip distances and fuel costs"
               },
@@ -314,17 +314,18 @@ export default function Home() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <p className="text-gray-600 text-sm">
               Need to calculate trip costs? Try our{' '}
-              <Link href="/mapquest-mileage" className="text-blue-600 hover:text-blue-700">
+              <Link href="/mapquest-mileage-calculator" className="text-blue-600 hover:text-blue-700">
                 MapQuest Mileage Calculator
+              </Link>{' '}
+              and{' '}
+              <Link href="https://mapsdriving-directions.com/" className="text-blue-600 hover:text-blue-700">
+                MapQuest Directions
               </Link>{' '}
               to estimate distances and fuel expenses. For navigation tips and route planning strategies, check out our{' '}
               <Link href="/tips-for-travelers" className="text-blue-600 hover:text-blue-700">
                 Tips for Travelers
               </Link>{' '}
-              guide. Wondering how our service compares? See our{' '}
-              <Link href="/yahoo-maps-vs-google-maps" className="text-blue-600 hover:text-blue-700">
-                comparison with Google Maps
-              </Link>.
+              guide. Wondering how our service compares? See our comparison with Google Maps.
             </p>
           </div>
         </div>

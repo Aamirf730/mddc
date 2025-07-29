@@ -49,7 +49,7 @@ export default function MapQuestMileageCalculator() {
               <h3 className="font-medium text-gray-900">Accurate Distance Calculations:</h3>
               <p className="text-gray-600">
                 MapQuest uses up-to-date mapping data to provide accurate distance calculations along actual driving routes, not just straight-line distances. This ensures you get realistic estimates for your journey. Compare this with other mapping services in our{' '}
-                <Link href="/yahoo-maps-vs-google-maps" className="text-blue-600 hover:text-blue-700">
+                <Link href="/maps-comparison" className="text-blue-600 hover:text-blue-700">
                   detailed comparison guide
                 </Link>.
               </p>

@@ -22,7 +22,7 @@ export default function ComparisonPage() {
             </p>
             <p className="text-gray-600">
               Yahoo Maps, in comparison, provides solid coverage for most urban and suburban areas, but its global reach and update frequency aren't as extensive as Google's. Yahoo primarily relies on third-party mapping providers for its data. For the United States, Canada, and many parts of Europe and Asia, Yahoo Maps can certainly get you where you need to go. Need help planning your route? Try our{' '}
-              <Link href="/mapquest-mileage" className="text-blue-600 hover:text-blue-700">
+              <Link href="/mapquest-mileage-calculator" className="text-blue-600 hover:text-blue-700">
                 MapQuest Mileage Calculator
               </Link>{' '}
               to estimate distances and fuel costs.

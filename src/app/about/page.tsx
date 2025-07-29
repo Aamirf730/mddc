@@ -39,7 +39,7 @@ export default function AboutPage() {
               <li>Real-time traffic updates</li>
               <li>Multiple route options</li>
               <li>
-                <Link href="/mapquest-mileage" className="text-blue-600 hover:text-blue-700">
+                <Link href="/mapquest-mileage-calculator" className="text-blue-600 hover:text-blue-700">
                   Fuel cost calculation
                 </Link>
               </li>

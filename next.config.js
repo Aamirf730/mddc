@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     domains: ['mapsdirectionsdriving.com'],
@@ -9,11 +11,7 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  trailingSlash: true,
-  output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : undefined,
-  basePath: ''
+  }
 }
 
 module.exports = nextConfig 

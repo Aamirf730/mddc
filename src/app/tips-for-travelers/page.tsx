@@ -29,7 +29,7 @@ export default function TipsPage() {
                     <h2 className="text-xl font-semibold text-gray-900 mb-3">Plan Rest Stops</h2>
                     <p className="text-gray-600">
                       On a long drive, you'll likely need breaks for fuel, food, or sightseeing. MapQuest allows you to search for gas stations, restaurants, or hotels along your route. Use our{' '}
-                      <Link href="/mapquest-mileage" className="text-blue-600 hover:text-blue-700">
+                      <Link href="/mapquest-mileage-calculator" className="text-blue-600 hover:text-blue-700">
                         Mileage Calculator
                       </Link>{' '}
                       to estimate distances between stops and plan your breaks efficiently.

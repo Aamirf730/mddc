@@ -11,11 +11,11 @@ export default function DirectionsList({ directions }: DirectionsListProps) {
   if (!directions) return (
     <div className="bg-white rounded-lg shadow-sm p-6">
       <div className="text-gray-600 space-y-4">
-        <p>Maps Driving Directions is a powerful online navigation tool that helps you find the best routes to your destination. Whether you're commuting to work or embarking on a cross-country road trip, Maps' mapping service provides accurate turn-by-turn directions along with real-time traffic updates. With its user-friendly interface and comprehensive features, it offers a reliable way to plan your drives and explore new places.</p>
+        <p>Mapquest directions is a powerful online navigation tool that helps you find the best routes to your destination. Whether you're commuting to work or embarking on a cross-country road trip, Maps' mapping service provides accurate turn-by-turn directions along with real-time traffic updates. With its user-friendly interface and comprehensive features, it offers a reliable way to plan your drives and explore new places.</p>
         
-        <p>Getting started with Maps Driving Directions is simple. Just enter your starting point and destination, and the tool will quickly calculate the optimal route for you. You can view the path on an interactive map and follow detailed driving instructions. Maps will also estimate your travel time based on current traffic conditions, so you know exactly when you'll arrive. The platform is web-based, meaning you can access it from any computer or mobile device browser without needing a separate app. This makes it convenient to get directions on the go or even print them as a backup.</p>
+        <p>Getting started with Mapquest directions is simple. Just enter your starting point and destination, and the tool will quickly calculate the optimal route for you. You can view the path on an interactive map and follow detailed driving instructions. Maps will also estimate your travel time based on current traffic conditions, so you know exactly when you'll arrive. The platform is web-based, meaning you can access it from any computer or mobile device browser without needing a separate app. This makes it convenient to get directions on the go or even print them as a backup.</p>
 
-        <h3 className="text-lg font-medium text-gray-900">Key Features of Maps Driving Directions</h3>
+        <h3 className="text-lg font-medium text-gray-900">Key Features of Mapquest directions</h3>
 
         <p><strong>Real-Time Traffic Updates:</strong> Maps provides live traffic data, allowing you to avoid congested highways, accidents, or road closures. The map highlights traffic slowdowns and suggests alternate routes so you can reach your destination faster and with fewer delays.</p>
 

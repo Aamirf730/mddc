@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm" role="banner">
-      <nav className="px-4 py-4" role="navigation" aria-label="Main navigation">
+      <nav className="px-0 py-4" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-4">
@@ -22,7 +22,7 @@ export default function Header() {
                 height={48}
                 className="w-12 h-12 object-contain"
               />
-              <h1 className="text-2xl font-bold text-gray-900">Maps Driving Directions</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Mapquest Directions - Maps and Driving Routes Online</h1>
             </Link>
 
             {/* Hamburger menu button */}
@@ -53,14 +53,14 @@ export default function Header() {
               <ul className="flex space-x-6">
                 <li>
                   <Link 
-                    href="/" 
+                    href="/mapquest-route-planner" 
                     className={`text-sm font-medium ${
-                      pathname === '/' 
+                      pathname === '/mapquest-route-planner' 
                         ? 'text-blue-600' 
                         : 'text-gray-500 hover:text-gray-900'
                     }`}
                   >
-                    Driving Directions
+                    Mapquest Route Planner
                   </Link>
                 </li>
                 <li>
@@ -84,15 +84,15 @@ export default function Header() {
             <ul className="flex flex-col space-y-4">
               <li>
                 <Link 
-                  href="/" 
+                  href="/mapquest-route-planner" 
                   className={`text-sm font-medium block ${
-                    pathname === '/' 
+                    pathname === '/mapquest-route-planner' 
                       ? 'text-blue-600' 
                       : 'text-gray-500 hover:text-gray-900'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Driving Directions
+                  Mapquest Route Planner
                 </Link>
               </li>
               <li>
