@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "rm -rf .next && next build && cp _headers _redirects out/ 2>/dev/null || true",
+    "build:cf": "rm -rf .next out && next build && cp _headers _redirects out/ 2>/dev/null || true",
     "start": "next start",
     "lint": "next lint"
   },

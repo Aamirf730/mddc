@@ -1,1 +1,11 @@
-/*    /index.html   200 
+/*    /index.html   200
+/     /index.html   200
+/about     /about/index.html   200
+/faqs     /faqs/index.html   200
+/mapquest-route-planner     /mapquest-route-planner/index.html   200
+/mapquest-walking-directions     /mapquest-walking-directions/index.html   200
+/mapquest-mileage-calculator     /mapquest-mileage-calculator/index.html   200
+/yahoo-maps-driving-directions     /yahoo-maps-driving-directions/index.html   200
+/maps-comparison     /maps-comparison/index.html   200
+/tips-for-travelers     /tips-for-travelers/index.html   200
+/privacy-policy     /privacy-policy/index.html   200 
